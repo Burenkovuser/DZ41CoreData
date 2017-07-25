@@ -14,6 +14,7 @@
 		FB28EFA71F27292300FA769F /* DZ41CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFA51F27292300FA769F /* DZ41CoreData.xcdatamodeld */; };
 		FB28EFA91F27292300FA769F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB28EFA81F27292300FA769F /* Assets.xcassets */; };
 		FB28EFAC1F27292300FA769F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB28EFAA1F27292300FA769F /* LaunchScreen.storyboard */; };
+		FB28EFB61F2747CA00FA769F /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFB51F2747CA00FA769F /* DataManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		FB28EFA81F27292300FA769F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB28EFAB1F27292300FA769F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB28EFAD1F27292300FA769F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB28EFB41F2747CA00FA769F /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		FB28EFB51F2747CA00FA769F /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 		FB28EF981F27292200FA769F /* DZ41CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				FB28EFB31F27478300FA769F /* CoreData */,
 				FB28EF9C1F27292200FA769F /* AppDelegate.h */,
 				FB28EF9D1F27292200FA769F /* AppDelegate.m */,
 				FB28EF9F1F27292200FA769F /* ViewController.h */,
@@ -68,7 +72,6 @@
 				FB28EFA81F27292300FA769F /* Assets.xcassets */,
 				FB28EFAA1F27292300FA769F /* LaunchScreen.storyboard */,
 				FB28EFAD1F27292300FA769F /* Info.plist */,
-				FB28EFA51F27292300FA769F /* DZ41CoreData.xcdatamodeld */,
 				FB28EF991F27292200FA769F /* Supporting Files */,
 			);
 			path = DZ41CoreData;
@@ -80,6 +83,16 @@
 				FB28EF9A1F27292200FA769F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB28EFB31F27478300FA769F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				FB28EFA51F27292300FA769F /* DZ41CoreData.xcdatamodeld */,
+				FB28EFB41F2747CA00FA769F /* DataManager.h */,
+				FB28EFB51F2747CA00FA769F /* DataManager.m */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB28EFA11F27292200FA769F /* ViewController.m in Sources */,
+				FB28EFB61F2747CA00FA769F /* DataManager.m in Sources */,
 				FB28EF9E1F27292200FA769F /* AppDelegate.m in Sources */,
 				FB28EF9B1F27292200FA769F /* main.m in Sources */,
 				FB28EFA71F27292300FA769F /* DZ41CoreData.xcdatamodeld in Sources */,
@@ -313,6 +327,7 @@
 				FB28EFB21F27292300FA769F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
