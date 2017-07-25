@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Course" representedClassName="Course" parentEntity="Object" syncable="YES">
+        <attribute name="discipline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sphere" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="students" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Student" inverseName="course" inverseEntity="Student" syncable="YES"/>
+    </entity>
+    <entity name="Object" representedClassName="Object" isAbstract="YES" syncable="YES"/>
+    <entity name="Student" representedClassName="Student" parentEntity="Object" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="course" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Course" inverseName="students" inverseEntity="Course" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Object" positionX="-119" positionY="-108" width="128" height="43"/>
+        <element name="Course" positionX="-243" positionY="27" width="128" height="103"/>
+        <element name="Student" positionX="52" positionY="27" width="128" height="103"/>
+    </elements>
 </model>

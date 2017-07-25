@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		FB28EF9B1F27292200FA769F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EF9A1F27292200FA769F /* main.m */; };
 		FB28EF9E1F27292200FA769F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EF9D1F27292200FA769F /* AppDelegate.m */; };
-		FB28EFA11F27292200FA769F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFA01F27292200FA769F /* ViewController.m */; };
 		FB28EFA41F27292300FA769F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB28EFA21F27292300FA769F /* Main.storyboard */; };
 		FB28EFA71F27292300FA769F /* DZ41CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFA51F27292300FA769F /* DZ41CoreData.xcdatamodeld */; };
 		FB28EFA91F27292300FA769F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB28EFA81F27292300FA769F /* Assets.xcassets */; };
 		FB28EFAC1F27292300FA769F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB28EFAA1F27292300FA769F /* LaunchScreen.storyboard */; };
 		FB28EFB61F2747CA00FA769F /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFB51F2747CA00FA769F /* DataManager.m */; };
+		FB28EFC01F2751F200FA769F /* CoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFBF1F2751F200FA769F /* CoreDataViewController.m */; };
+		FB28EFE11F27790700FA769F /* Object+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFD61F27790700FA769F /* Object+CoreDataClass.m */; };
+		FB28EFE21F27790700FA769F /* Object+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFD81F27790700FA769F /* Object+CoreDataProperties.m */; };
+		FB28EFE31F27790700FA769F /* Course+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFDA1F27790700FA769F /* Course+CoreDataClass.m */; };
+		FB28EFE41F27790700FA769F /* Course+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFDC1F27790700FA769F /* Course+CoreDataProperties.m */; };
+		FB28EFE51F27790700FA769F /* Student+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFDE1F27790700FA769F /* Student+CoreDataClass.m */; };
+		FB28EFE61F27790700FA769F /* Student+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFE01F27790700FA769F /* Student+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,8 +28,6 @@
 		FB28EF9A1F27292200FA769F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FB28EF9C1F27292200FA769F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FB28EF9D1F27292200FA769F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FB28EF9F1F27292200FA769F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FB28EFA01F27292200FA769F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FB28EFA31F27292300FA769F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB28EFA61F27292300FA769F /* DZ41CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DZ41CoreData.xcdatamodel; sourceTree = "<group>"; };
 		FB28EFA81F27292300FA769F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -31,6 +35,20 @@
 		FB28EFAD1F27292300FA769F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB28EFB41F2747CA00FA769F /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		FB28EFB51F2747CA00FA769F /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		FB28EFBE1F2751F200FA769F /* CoreDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataViewController.h; sourceTree = "<group>"; };
+		FB28EFBF1F2751F200FA769F /* CoreDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataViewController.m; sourceTree = "<group>"; };
+		FB28EFD51F27790700FA769F /* Object+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Object+CoreDataClass.h"; path = "../Object+CoreDataClass.h"; sourceTree = "<group>"; };
+		FB28EFD61F27790700FA769F /* Object+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Object+CoreDataClass.m"; path = "../Object+CoreDataClass.m"; sourceTree = "<group>"; };
+		FB28EFD71F27790700FA769F /* Object+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Object+CoreDataProperties.h"; path = "../Object+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FB28EFD81F27790700FA769F /* Object+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Object+CoreDataProperties.m"; path = "../Object+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FB28EFD91F27790700FA769F /* Course+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Course+CoreDataClass.h"; path = "../Course+CoreDataClass.h"; sourceTree = "<group>"; };
+		FB28EFDA1F27790700FA769F /* Course+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Course+CoreDataClass.m"; path = "../Course+CoreDataClass.m"; sourceTree = "<group>"; };
+		FB28EFDB1F27790700FA769F /* Course+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Course+CoreDataProperties.h"; path = "../Course+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FB28EFDC1F27790700FA769F /* Course+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Course+CoreDataProperties.m"; path = "../Course+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FB28EFDD1F27790700FA769F /* Student+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Student+CoreDataClass.h"; path = "../Student+CoreDataClass.h"; sourceTree = "<group>"; };
+		FB28EFDE1F27790700FA769F /* Student+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Student+CoreDataClass.m"; path = "../Student+CoreDataClass.m"; sourceTree = "<group>"; };
+		FB28EFDF1F27790700FA769F /* Student+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Student+CoreDataProperties.h"; path = "../Student+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FB28EFE01F27790700FA769F /* Student+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Student+CoreDataProperties.m"; path = "../Student+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +82,11 @@
 			isa = PBXGroup;
 			children = (
 				FB28EFB31F27478300FA769F /* CoreData */,
+				FB28EFB71F274D5700FA769F /* Model */,
+				FB28EFC11F27526300FA769F /* Sudents */,
+				FB28EFC21F2752AA00FA769F /* Courses */,
 				FB28EF9C1F27292200FA769F /* AppDelegate.h */,
 				FB28EF9D1F27292200FA769F /* AppDelegate.m */,
-				FB28EF9F1F27292200FA769F /* ViewController.h */,
-				FB28EFA01F27292200FA769F /* ViewController.m */,
 				FB28EFA21F27292300FA769F /* Main.storyboard */,
 				FB28EFA81F27292300FA769F /* Assets.xcassets */,
 				FB28EFAA1F27292300FA769F /* LaunchScreen.storyboard */,
@@ -91,8 +110,43 @@
 				FB28EFA51F27292300FA769F /* DZ41CoreData.xcdatamodeld */,
 				FB28EFB41F2747CA00FA769F /* DataManager.h */,
 				FB28EFB51F2747CA00FA769F /* DataManager.m */,
+				FB28EFBE1F2751F200FA769F /* CoreDataViewController.h */,
+				FB28EFBF1F2751F200FA769F /* CoreDataViewController.m */,
 			);
 			name = CoreData;
+			sourceTree = "<group>";
+		};
+		FB28EFB71F274D5700FA769F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB28EFD51F27790700FA769F /* Object+CoreDataClass.h */,
+				FB28EFD61F27790700FA769F /* Object+CoreDataClass.m */,
+				FB28EFD71F27790700FA769F /* Object+CoreDataProperties.h */,
+				FB28EFD81F27790700FA769F /* Object+CoreDataProperties.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FB28EFC11F27526300FA769F /* Sudents */ = {
+			isa = PBXGroup;
+			children = (
+				FB28EFDD1F27790700FA769F /* Student+CoreDataClass.h */,
+				FB28EFDE1F27790700FA769F /* Student+CoreDataClass.m */,
+				FB28EFDF1F27790700FA769F /* Student+CoreDataProperties.h */,
+				FB28EFE01F27790700FA769F /* Student+CoreDataProperties.m */,
+			);
+			name = Sudents;
+			sourceTree = "<group>";
+		};
+		FB28EFC21F2752AA00FA769F /* Courses */ = {
+			isa = PBXGroup;
+			children = (
+				FB28EFD91F27790700FA769F /* Course+CoreDataClass.h */,
+				FB28EFDA1F27790700FA769F /* Course+CoreDataClass.m */,
+				FB28EFDB1F27790700FA769F /* Course+CoreDataProperties.h */,
+				FB28EFDC1F27790700FA769F /* Course+CoreDataProperties.m */,
+			);
+			name = Courses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,10 +220,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB28EFA11F27292200FA769F /* ViewController.m in Sources */,
+				FB28EFE61F27790700FA769F /* Student+CoreDataProperties.m in Sources */,
+				FB28EFE11F27790700FA769F /* Object+CoreDataClass.m in Sources */,
+				FB28EFE21F27790700FA769F /* Object+CoreDataProperties.m in Sources */,
 				FB28EFB61F2747CA00FA769F /* DataManager.m in Sources */,
+				FB28EFE51F27790700FA769F /* Student+CoreDataClass.m in Sources */,
 				FB28EF9E1F27292200FA769F /* AppDelegate.m in Sources */,
+				FB28EFC01F2751F200FA769F /* CoreDataViewController.m in Sources */,
 				FB28EF9B1F27292200FA769F /* main.m in Sources */,
+				FB28EFE41F27790700FA769F /* Course+CoreDataProperties.m in Sources */,
+				FB28EFE31F27790700FA769F /* Course+CoreDataClass.m in Sources */,
 				FB28EFA71F27292300FA769F /* DZ41CoreData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
