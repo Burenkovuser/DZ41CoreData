@@ -21,6 +21,9 @@
 		FB28EFE41F27790700FA769F /* Course+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFDC1F27790700FA769F /* Course+CoreDataProperties.m */; };
 		FB28EFE51F27790700FA769F /* Student+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFDE1F27790700FA769F /* Student+CoreDataClass.m */; };
 		FB28EFE61F27790700FA769F /* Student+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFE01F27790700FA769F /* Student+CoreDataProperties.m */; };
+		FB28EFEC1F285C7C00FA769F /* CoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFEB1F285C7C00FA769F /* CoursesViewController.m */; };
+		FB28EFEF1F285D1400FA769F /* CoursesInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFEE1F285D1400FA769F /* CoursesInfoTableViewController.m */; };
+		FB28EFF31F285D6F00FA769F /* CourseInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFF21F285D6F00FA769F /* CourseInfoCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,12 @@
 		FB28EFDE1F27790700FA769F /* Student+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Student+CoreDataClass.m"; path = "../Student+CoreDataClass.m"; sourceTree = "<group>"; };
 		FB28EFDF1F27790700FA769F /* Student+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Student+CoreDataProperties.h"; path = "../Student+CoreDataProperties.h"; sourceTree = "<group>"; };
 		FB28EFE01F27790700FA769F /* Student+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Student+CoreDataProperties.m"; path = "../Student+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FB28EFEA1F285C7C00FA769F /* CoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesViewController.h; sourceTree = "<group>"; };
+		FB28EFEB1F285C7C00FA769F /* CoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesViewController.m; sourceTree = "<group>"; };
+		FB28EFED1F285D1400FA769F /* CoursesInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesInfoTableViewController.h; sourceTree = "<group>"; };
+		FB28EFEE1F285D1400FA769F /* CoursesInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesInfoTableViewController.m; sourceTree = "<group>"; };
+		FB28EFF11F285D6F00FA769F /* CourseInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseInfoCell.h; sourceTree = "<group>"; };
+		FB28EFF21F285D6F00FA769F /* CourseInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseInfoCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,10 +139,7 @@
 		FB28EFC11F27526300FA769F /* Sudents */ = {
 			isa = PBXGroup;
 			children = (
-				FB28EFDD1F27790700FA769F /* Student+CoreDataClass.h */,
-				FB28EFDE1F27790700FA769F /* Student+CoreDataClass.m */,
-				FB28EFDF1F27790700FA769F /* Student+CoreDataProperties.h */,
-				FB28EFE01F27790700FA769F /* Student+CoreDataProperties.m */,
+				FB28EFE71F285BC300FA769F /* Model */,
 			);
 			name = Sudents;
 			sourceTree = "<group>";
@@ -141,12 +147,53 @@
 		FB28EFC21F2752AA00FA769F /* Courses */ = {
 			isa = PBXGroup;
 			children = (
+				FB28EFF01F285D3500FA769F /* Cells */,
+				FB28EFE91F285BF600FA769F /* ViewControllers */,
+				FB28EFE81F285BD800FA769F /* Model */,
+			);
+			name = Courses;
+			sourceTree = "<group>";
+		};
+		FB28EFE71F285BC300FA769F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB28EFDD1F27790700FA769F /* Student+CoreDataClass.h */,
+				FB28EFDE1F27790700FA769F /* Student+CoreDataClass.m */,
+				FB28EFDF1F27790700FA769F /* Student+CoreDataProperties.h */,
+				FB28EFE01F27790700FA769F /* Student+CoreDataProperties.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FB28EFE81F285BD800FA769F /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				FB28EFD91F27790700FA769F /* Course+CoreDataClass.h */,
 				FB28EFDA1F27790700FA769F /* Course+CoreDataClass.m */,
 				FB28EFDB1F27790700FA769F /* Course+CoreDataProperties.h */,
 				FB28EFDC1F27790700FA769F /* Course+CoreDataProperties.m */,
 			);
-			name = Courses;
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FB28EFE91F285BF600FA769F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB28EFEA1F285C7C00FA769F /* CoursesViewController.h */,
+				FB28EFEB1F285C7C00FA769F /* CoursesViewController.m */,
+				FB28EFED1F285D1400FA769F /* CoursesInfoTableViewController.h */,
+				FB28EFEE1F285D1400FA769F /* CoursesInfoTableViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FB28EFF01F285D3500FA769F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FB28EFF11F285D6F00FA769F /* CourseInfoCell.h */,
+				FB28EFF21F285D6F00FA769F /* CourseInfoCell.m */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,7 +268,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB28EFE61F27790700FA769F /* Student+CoreDataProperties.m in Sources */,
+				FB28EFEC1F285C7C00FA769F /* CoursesViewController.m in Sources */,
 				FB28EFE11F27790700FA769F /* Object+CoreDataClass.m in Sources */,
+				FB28EFEF1F285D1400FA769F /* CoursesInfoTableViewController.m in Sources */,
+				FB28EFF31F285D6F00FA769F /* CourseInfoCell.m in Sources */,
 				FB28EFE21F27790700FA769F /* Object+CoreDataProperties.m in Sources */,
 				FB28EFB61F2747CA00FA769F /* DataManager.m in Sources */,
 				FB28EFE51F27790700FA769F /* Student+CoreDataClass.m in Sources */,
