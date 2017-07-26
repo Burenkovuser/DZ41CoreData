@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB08D1CA1F28BC330027D59C /* SpheresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB08D1C91F28BC330027D59C /* SpheresViewController.m */; };
+		FB08D1CF1F28BE9A0027D59C /* StudentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB08D1CE1F28BE9A0027D59C /* StudentsViewController.m */; };
+		FB08D1D21F28BEEF0027D59C /* UserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB08D1D11F28BEEF0027D59C /* UserCell.m */; };
+		FB08D1D51F28BF2D0027D59C /* StudentInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB08D1D41F28BF2D0027D59C /* StudentInfoViewController.m */; };
+		FB08D1D81F28D67C0027D59C /* StudentInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB08D1D71F28D67C0027D59C /* StudentInfoCell.m */; };
 		FB28EF9B1F27292200FA769F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EF9A1F27292200FA769F /* main.m */; };
 		FB28EF9E1F27292200FA769F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EF9D1F27292200FA769F /* AppDelegate.m */; };
 		FB28EFA41F27292300FA769F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB28EFA21F27292300FA769F /* Main.storyboard */; };
@@ -22,11 +27,22 @@
 		FB28EFE51F27790700FA769F /* Student+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFDE1F27790700FA769F /* Student+CoreDataClass.m */; };
 		FB28EFE61F27790700FA769F /* Student+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFE01F27790700FA769F /* Student+CoreDataProperties.m */; };
 		FB28EFEC1F285C7C00FA769F /* CoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFEB1F285C7C00FA769F /* CoursesViewController.m */; };
-		FB28EFEF1F285D1400FA769F /* CoursesInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFEE1F285D1400FA769F /* CoursesInfoTableViewController.m */; };
 		FB28EFF31F285D6F00FA769F /* CourseInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFF21F285D6F00FA769F /* CourseInfoCell.m */; };
+		FB28EFF61F28656F00FA769F /* CoursesInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFF51F28656F00FA769F /* CoursesInfoViewController.m */; };
+		FB28EFF91F2869B100FA769F /* CourseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFF81F2869B100FA769F /* CourseCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB08D1C81F28BC330027D59C /* SpheresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpheresViewController.h; sourceTree = "<group>"; };
+		FB08D1C91F28BC330027D59C /* SpheresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpheresViewController.m; sourceTree = "<group>"; };
+		FB08D1CD1F28BE9A0027D59C /* StudentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentsViewController.h; sourceTree = "<group>"; };
+		FB08D1CE1F28BE9A0027D59C /* StudentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsViewController.m; sourceTree = "<group>"; };
+		FB08D1D01F28BEEF0027D59C /* UserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCell.h; sourceTree = "<group>"; };
+		FB08D1D11F28BEEF0027D59C /* UserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCell.m; sourceTree = "<group>"; };
+		FB08D1D31F28BF2D0027D59C /* StudentInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentInfoViewController.h; sourceTree = "<group>"; };
+		FB08D1D41F28BF2D0027D59C /* StudentInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentInfoViewController.m; sourceTree = "<group>"; };
+		FB08D1D61F28D67C0027D59C /* StudentInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentInfoCell.h; sourceTree = "<group>"; };
+		FB08D1D71F28D67C0027D59C /* StudentInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentInfoCell.m; sourceTree = "<group>"; };
 		FB28EF961F27292200FA769F /* DZ41CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DZ41CoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB28EF9A1F27292200FA769F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FB28EF9C1F27292200FA769F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,10 +70,12 @@
 		FB28EFE01F27790700FA769F /* Student+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Student+CoreDataProperties.m"; path = "../Student+CoreDataProperties.m"; sourceTree = "<group>"; };
 		FB28EFEA1F285C7C00FA769F /* CoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesViewController.h; sourceTree = "<group>"; };
 		FB28EFEB1F285C7C00FA769F /* CoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesViewController.m; sourceTree = "<group>"; };
-		FB28EFED1F285D1400FA769F /* CoursesInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesInfoTableViewController.h; sourceTree = "<group>"; };
-		FB28EFEE1F285D1400FA769F /* CoursesInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesInfoTableViewController.m; sourceTree = "<group>"; };
 		FB28EFF11F285D6F00FA769F /* CourseInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseInfoCell.h; sourceTree = "<group>"; };
 		FB28EFF21F285D6F00FA769F /* CourseInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseInfoCell.m; sourceTree = "<group>"; };
+		FB28EFF41F28656F00FA769F /* CoursesInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesInfoViewController.h; sourceTree = "<group>"; };
+		FB28EFF51F28656F00FA769F /* CoursesInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesInfoViewController.m; sourceTree = "<group>"; };
+		FB28EFF71F2869B100FA769F /* CourseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseCell.h; sourceTree = "<group>"; };
+		FB28EFF81F2869B100FA769F /* CourseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +89,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB08D1CB1F28BDE80027D59C /* Viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				FB08D1CD1F28BE9A0027D59C /* StudentsViewController.h */,
+				FB08D1CE1F28BE9A0027D59C /* StudentsViewController.m */,
+				FB08D1D31F28BF2D0027D59C /* StudentInfoViewController.h */,
+				FB08D1D41F28BF2D0027D59C /* StudentInfoViewController.m */,
+			);
+			name = Viewcontrollers;
+			sourceTree = "<group>";
+		};
+		FB08D1CC1F28BDFC0027D59C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FB08D1D01F28BEEF0027D59C /* UserCell.h */,
+				FB08D1D11F28BEEF0027D59C /* UserCell.m */,
+				FB08D1D61F28D67C0027D59C /* StudentInfoCell.h */,
+				FB08D1D71F28D67C0027D59C /* StudentInfoCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		FB28EF8D1F27292200FA769F = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +179,8 @@
 		FB28EFC11F27526300FA769F /* Sudents */ = {
 			isa = PBXGroup;
 			children = (
+				FB08D1CC1F28BDFC0027D59C /* Cells */,
+				FB08D1CB1F28BDE80027D59C /* Viewcontrollers */,
 				FB28EFE71F285BC300FA769F /* Model */,
 			);
 			name = Sudents;
@@ -181,8 +223,10 @@
 			children = (
 				FB28EFEA1F285C7C00FA769F /* CoursesViewController.h */,
 				FB28EFEB1F285C7C00FA769F /* CoursesViewController.m */,
-				FB28EFED1F285D1400FA769F /* CoursesInfoTableViewController.h */,
-				FB28EFEE1F285D1400FA769F /* CoursesInfoTableViewController.m */,
+				FB28EFF41F28656F00FA769F /* CoursesInfoViewController.h */,
+				FB28EFF51F28656F00FA769F /* CoursesInfoViewController.m */,
+				FB08D1C81F28BC330027D59C /* SpheresViewController.h */,
+				FB08D1C91F28BC330027D59C /* SpheresViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -192,6 +236,8 @@
 			children = (
 				FB28EFF11F285D6F00FA769F /* CourseInfoCell.h */,
 				FB28EFF21F285D6F00FA769F /* CourseInfoCell.m */,
+				FB28EFF71F2869B100FA769F /* CourseCell.h */,
+				FB28EFF81F2869B100FA769F /* CourseCell.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -270,17 +316,23 @@
 				FB28EFE61F27790700FA769F /* Student+CoreDataProperties.m in Sources */,
 				FB28EFEC1F285C7C00FA769F /* CoursesViewController.m in Sources */,
 				FB28EFE11F27790700FA769F /* Object+CoreDataClass.m in Sources */,
-				FB28EFEF1F285D1400FA769F /* CoursesInfoTableViewController.m in Sources */,
 				FB28EFF31F285D6F00FA769F /* CourseInfoCell.m in Sources */,
+				FB08D1D21F28BEEF0027D59C /* UserCell.m in Sources */,
 				FB28EFE21F27790700FA769F /* Object+CoreDataProperties.m in Sources */,
 				FB28EFB61F2747CA00FA769F /* DataManager.m in Sources */,
+				FB08D1CF1F28BE9A0027D59C /* StudentsViewController.m in Sources */,
 				FB28EFE51F27790700FA769F /* Student+CoreDataClass.m in Sources */,
+				FB28EFF61F28656F00FA769F /* CoursesInfoViewController.m in Sources */,
 				FB28EF9E1F27292200FA769F /* AppDelegate.m in Sources */,
 				FB28EFC01F2751F200FA769F /* CoreDataViewController.m in Sources */,
 				FB28EF9B1F27292200FA769F /* main.m in Sources */,
+				FB08D1CA1F28BC330027D59C /* SpheresViewController.m in Sources */,
+				FB28EFF91F2869B100FA769F /* CourseCell.m in Sources */,
 				FB28EFE41F27790700FA769F /* Course+CoreDataProperties.m in Sources */,
 				FB28EFE31F27790700FA769F /* Course+CoreDataClass.m in Sources */,
+				FB08D1D51F28BF2D0027D59C /* StudentInfoViewController.m in Sources */,
 				FB28EFA71F27292300FA769F /* DZ41CoreData.xcdatamodeld in Sources */,
+				FB08D1D81F28D67C0027D59C /* StudentInfoCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

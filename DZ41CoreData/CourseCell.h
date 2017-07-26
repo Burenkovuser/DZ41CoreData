@@ -1,5 +1,5 @@
 //
-//  CoursesInfoTableViewController.h
+//  CourseCell.h
 //  DZ41CoreData
 //
 //  Created by Vasilii on 26.07.17.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CoursesInfoTableViewController : UITableViewController
+@interface CourseCell : UITableViewCell
 
 @end

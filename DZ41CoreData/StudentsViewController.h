@@ -1,5 +1,5 @@
 //
-//  CoursesViewController.h
+//  StudentsViewController.h
 //  DZ41CoreData
 //
 //  Created by Vasilii on 26.07.17.
@@ -8,7 +8,7 @@
 
 #import "CoreDataViewController.h"
 
-@interface CoursesViewController : CoreDataViewController
+@interface StudentsViewController : CoreDataViewController
 
 @property (strong, nonatomic) NSIndexPath *indexPathForEdit;
 

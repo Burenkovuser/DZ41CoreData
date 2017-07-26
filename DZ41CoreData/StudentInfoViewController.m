@@ -1,18 +1,18 @@
 //
-//  CoursesInfoTableViewController.m
+//  StudentInfoViewController.m
 //  DZ41CoreData
 //
 //  Created by Vasilii on 26.07.17.
 //  Copyright © 2017 Vasilii Burenkov. All rights reserved.
 //
 
-#import "CoursesInfoTableViewController.h"
+#import "StudentInfoViewController.h"
 
-@interface CoursesInfoTableViewController ()
+@interface StudentInfoViewController ()
 
 @end
 
-@implementation CoursesInfoTableViewController
+@implementation StudentInfoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
