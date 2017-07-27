@@ -7,21 +7,39 @@
 //
 
 #import "StudentInfoViewController.h"
+#import "Student+CoreDataClass.h"
+#import "StudentsViewController.h"
+#import "StudentInfoCell.h"
 
 @interface StudentInfoViewController ()
 
+@property (strong, nonatomic) Student *student;
+
 @end
+
+typedef enum {
+    
+    NameRow,
+    LastnameRow,
+    EmailRow,
+    
+} Row;
+
+static NSString *nameCell = @"nameCell";
+static NSString *lastnameCell = @"lastnameCell";
+static NSString *emailCell = @"emailCell";
 
 @implementation StudentInfoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    if (self.isEdit) {
+        
+        StudentsViewController *vc = self.studentViewController;
+        
+        self.student = [vc.fetchedResultsController objectAtIndexPath:vc.indexPathForEdit];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,67 +50,97 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return 3;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
+    StudentInfoCell *cell = nil;
     
-    return cell;
+    
+    switch (indexPath.row) {
+        case NameRow:
+            cell = [tableView dequeueReusableCellWithIdentifier:nameCell
+                                                   forIndexPath:indexPath];
+            if (self.isEdit) {
+                cell.nameTextField.text = self.student.name;
+            }
+            
+            self.nameCell = cell;
+            
+            return cell;
+            
+        case LastnameRow:
+            cell = [tableView dequeueReusableCellWithIdentifier:lastnameCell
+                                                   forIndexPath:indexPath];
+            if (self.isEdit) {
+                cell.lastnameTextField.text = self.student.lastname;
+            }
+            
+            self.lastnameCell = cell;
+            
+            return cell;
+            
+        case EmailRow:
+            cell = [tableView dequeueReusableCellWithIdentifier:emailCell
+                                                   forIndexPath:indexPath];
+            if (self.isEdit) {
+                cell.emailTextField.text = self.student.email;
+            }
+            
+            self.emailCell = cell;
+            
+            return cell;
+            
+        default:
+            return cell;
+    }
+    
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+#pragma mark -
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+#pragma mark - Actions
+
+- (IBAction)cancelAction:(UIBarButtonItem *)sender {
+    [self.navigationController popViewControllerAnimated:YES];
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+- (IBAction)doneAction:(UIBarButtonItem *)sender {
+    
+    NSManagedObjectContext *context = [self.studentViewController.fetchedResultsController managedObjectContext];
+    
+    if (!self.isEdit) {
+        
+        Student *student = [[Student alloc] initWithContext:context];
+        
+        student.name = self.nameCell.nameTextField.text;
+        student.lastname = self.lastnameCell.lastnameTextField.text;
+        student.email = self.emailCell.emailTextField.text;
+        
+    } else {
+        
+        self.student.name = self.nameCell.nameTextField.text;
+        self.student.lastname = self.lastnameCell.lastnameTextField.text;
+        self.student.email = self.emailCell.emailTextField.text;
+        
+    }
+    
+    // Save the context.
+    NSError *error = nil;
+    if (![context save:&error]) {
+        abort();
+    }
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

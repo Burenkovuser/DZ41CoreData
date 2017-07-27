@@ -30,6 +30,7 @@
 		FB28EFF31F285D6F00FA769F /* CourseInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFF21F285D6F00FA769F /* CourseInfoCell.m */; };
 		FB28EFF61F28656F00FA769F /* CoursesInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFF51F28656F00FA769F /* CoursesInfoViewController.m */; };
 		FB28EFF91F2869B100FA769F /* CourseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB28EFF81F2869B100FA769F /* CourseCell.m */; };
+		FB429DBF1F298EB3006D3896 /* CourseSphereCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB429DBE1F298EB3006D3896 /* CourseSphereCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,8 @@
 		FB28EFF51F28656F00FA769F /* CoursesInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesInfoViewController.m; sourceTree = "<group>"; };
 		FB28EFF71F2869B100FA769F /* CourseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseCell.h; sourceTree = "<group>"; };
 		FB28EFF81F2869B100FA769F /* CourseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseCell.m; sourceTree = "<group>"; };
+		FB429DBD1F298EB3006D3896 /* CourseSphereCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseSphereCell.h; sourceTree = "<group>"; };
+		FB429DBE1F298EB3006D3896 /* CourseSphereCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseSphereCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +241,8 @@
 				FB28EFF21F285D6F00FA769F /* CourseInfoCell.m */,
 				FB28EFF71F2869B100FA769F /* CourseCell.h */,
 				FB28EFF81F2869B100FA769F /* CourseCell.m */,
+				FB429DBD1F298EB3006D3896 /* CourseSphereCell.h */,
+				FB429DBE1F298EB3006D3896 /* CourseSphereCell.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -326,6 +331,7 @@
 				FB28EF9E1F27292200FA769F /* AppDelegate.m in Sources */,
 				FB28EFC01F2751F200FA769F /* CoreDataViewController.m in Sources */,
 				FB28EF9B1F27292200FA769F /* main.m in Sources */,
+				FB429DBF1F298EB3006D3896 /* CourseSphereCell.m in Sources */,
 				FB08D1CA1F28BC330027D59C /* SpheresViewController.m in Sources */,
 				FB28EFF91F2869B100FA769F /* CourseCell.m in Sources */,
 				FB28EFE41F27790700FA769F /* Course+CoreDataProperties.m in Sources */,

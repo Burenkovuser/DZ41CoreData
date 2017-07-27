@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 @class CoursesViewController;
 @class CourseInfoCell;
-//@class CourseSphereCell;
-//@class UserCell;
+@class CourseSphereCell;
+@class UserCell;
 
 @interface CoursesInfoViewController : UITableViewController
 
@@ -18,8 +18,8 @@
 
 @property (weak, nonatomic) CourseInfoCell *nameCell;
 @property (weak, nonatomic) CourseInfoCell *disciplineCell;
-//@property (weak, nonatomic) CourseSphereCell *sphereCell;
-//@property (strong, nonatomic) NSMutableArray<UserCell *> *studentCells;
+@property (weak, nonatomic) CourseSphereCell *sphereCell;
+@property (strong, nonatomic) NSMutableArray<UserCell *> *studentCells;
 
 @property (assign, nonatomic) BOOL isEdit;
 

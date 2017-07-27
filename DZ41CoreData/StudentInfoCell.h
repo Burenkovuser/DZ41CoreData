@@ -10,4 +10,8 @@
 
 @interface StudentInfoCell : UITableViewCell <UITextFieldDelegate>
 
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *lastnameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+
 @end

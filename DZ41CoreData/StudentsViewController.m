@@ -107,7 +107,7 @@ static NSString *editStudentIdentifier = @"editStudent";
 }
 
 #pragma mark - Navigation
-/*
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     if ([segue.identifier isEqualToString:newStudentIdentifier]) {
@@ -128,5 +128,5 @@ static NSString *editStudentIdentifier = @"editStudent";
         vc.isEdit = YES;
     }
 }
-*/
+
 @end
