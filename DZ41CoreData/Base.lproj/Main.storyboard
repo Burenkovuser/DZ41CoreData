@@ -39,6 +39,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="2al-Ig-fpL" kind="show" identifier="editCourse" id="u8l-LG-Uro"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BuR-ss-OUr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -153,8 +156,16 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Add Course" id="JY7-tC-8qp">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Kla-Ar-imd"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Ogr-BM-6bu"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Kla-Ar-imd">
+                            <connections>
+                                <action selector="cancelAction:" destination="2al-Ig-fpL" id="Yih-Da-ar5"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Ogr-BM-6bu">
+                            <connections>
+                                <action selector="doneAction:" destination="2al-Ig-fpL" id="RA3-2j-XtE"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -226,6 +237,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="8YY-E1-S5y" kind="show" identifier="editStudent" id="ugY-wk-zg8"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AFl-dM-k0x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -411,4 +425,8 @@
             <point key="canvasLocation" x="333.60000000000002" y="-100.29985007496252"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ugY-wk-zg8"/>
+        <segue reference="u8l-LG-Uro"/>
+    </inferredMetricsTieBreakers>
 </document>
